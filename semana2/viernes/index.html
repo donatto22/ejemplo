@@ -40,11 +40,15 @@
         }
 
         .card {
-            background-color: #272729;
-            width: 300px;
-            padding: 10px;
+            /* background-color: #272729; */
+            background: linear-gradient(45deg, red, rgb(255, 179, 0));
+            width: 90vw;
+            padding: 5px;
             margin-bottom: 20px;
             border-radius: 10px;
+
+            /* x y blur gutten (espesor) */
+            box-shadow: 0 0 50px 100px black;
         }
 
         img {
@@ -56,73 +60,77 @@
         }
 
         .card-description {
-            color: #9f9f9f;
+            color: #15144f;
+            text-align: center;
+            background-color: rgb(156, 156, 252);
+            /* volverlo en negrita */
+            font-weight: 100;
+            /* agregar subrayado */
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        .green {
+            background-color: green;
+            width: 50%;
+            height: 500px;
+        }
+
+        .pink {
+            background-color: pink;
+            width: 90%;
+            height: 400px;
+        }
+
+        .red {
+            background-color: red;
+            /* Vw - Viewport Width */
+            /* Vh - Viewport height */
+
+            /* DVw - Device Viewport Width */
+            /* DVh - Device Viewport height */
+            width: 90dvw;
+            height: 200px;
+        }
+
+        /* @media (width < 700px) {
+            body {
+                background-color: red;
+            }
+
+            .red {
+                background-color: crimson;
+            }
+        } */
+
+        input:focus {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
+
+    <!-- <div class="green">
+        <div class="pink">
+            <div class="red">
+
+            </div>
+        </div>
+    </div> -->
 
     <div class="card">
         <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
 
         <div>
             <p class="card-titulo">Gatitos blancos</p>
-            <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, blanditiis.</p>
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta a repudiandae consequatur omnis quibusdam maiores. Adipisci tempore, eveniet optio vero at, eum sit aperiam magni quae eaque quas iste deserunt fugit doloremque consectetur facere, ducimus blanditiis? Voluptate optio culpa porro perspiciatis totam! Voluptatum tempora voluptatibus debitis rerum quidem laudantium error corrupti autem. Reiciendis, atque, reprehenderit ipsa eos vitae iusto repellat aut accusantium provident similique vero impedit sit laudantium possimus. Obcaecati porro illum hic alias, ducimus tenetur laborum blanditiis ut atque odio placeat maiores temporibus architecto omnis minima distinctio tempore quod! Eum maxime rerum molestiae ipsam distinctio quidem dolorum! Maiores nostrum adipisci eveniet obcaecati ullam voluptatibus, odit pariatur, tempora dicta quo eaque aliquam quam dolore, autem explicabo! At, sequi obcaecati? Suscipit cum sed nam ullam sapiente maiores inventore incidunt officiis architecto recusandae a soluta, modi quasi similique, sit dolore quo sequi eum voluptatibus laudantium alias quibusdam odit quisquam eos? Quo, iure aspernatur blanditiis nihil minus quidem sed perferendis quos. Nulla amet, suscipit aliquam molestias voluptatem perferendis eos blanditiis veritatis facilis quibusdam esse, excepturi delectus! Inventore eveniet veritatis dolorem, magnam laudantium dolores sed debitis est? Ullam dolore at excepturi est facilis voluptatibus, adipisci dolorum iure illum nulla sit eveniet, beatae officia expedita saepe quaerat reprehenderit labore pariatur iusto omnis. Modi distinctio nisi corporis, minus incidunt voluptates, nihil exercitationem suscipit accusantium repellendus molestias quisquam repellat. Harum, velit consectetur? Culpa quod sunt modi consectetur ad dolor, laudantium porro saepe. Omnis praesentium suscipit pariatur. Ex veniam sint totam rerum molestias unde id adipisci. Commodi deserunt, ipsa eligendi esse aperiam culpa excepturi. In corporis sequi enim rerum quam porro dolorem excepturi eveniet tempora ab iure quis tempore mollitia vitae sed vel, illum non quia quos voluptates doloremque? Veniam perspiciatis rem explicabo cum repellat odit magnam repellendus id placeat ipsa vitae aut nulla quaerat, laudantium necessitatibus asperiores dignissimos velit! Asperiores minima nostrum possimus iusto tenetur repellendus consectetur officiis similique velit earum. Aut, suscipit optio voluptatibus repellat laudantium dignissimos molestias reprehenderit magnam adipisci nobis nulla fugiat neque sunt vitae odit dolore! Delectus minima aperiam voluptatem, optio maiores modi repellat adipisci ut repellendus corrupti blanditiis tempora voluptate officiis soluta praesentium nemo quo sunt possimus ex rerum impedit! Ut aspernatur, maiores adipisci iusto quaerat recusandae quod incidunt exercitationem ipsa, a fugiat quidem inventore corporis architecto impedit voluptas aperiam minus quam! Voluptates doloribus deserunt porro quas, sed distinctio eveniet minus error id laudantium explicabo neque alias quidem quasi, sequi esse labore ipsa. Cupiditate rem dolor ad quod quas ratione fugiat, labore quibusdam corporis repellendus! In ea accusantium doloremque? Commodi quia earum omnis fugiat aliquid beatae? Cupiditate sed eum iste adipisci pariatur, dolores doloremque eligendi quis tenetur amet porro aut fugit maiores veniam esse accusantium molestiae velit aliquid rem sapiente cumque ipsam assumenda quidem alias. Odit reprehenderit, sunt corrupti ea soluta, doloribus, fugit vel quae rerum libero amet quasi? Maxime vel, autem quasi blanditiis quas accusantium voluptates? Hic rem quo quidem corporis possimus assumenda ex nulla eos ab beatae amet totam cumque animi itaque alias, praesentium cum! Dolor aliquid in nihil voluptatem!</p>
         </div>
     </div>
 
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
 
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
-
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
-
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
-
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
-
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../semana1/gatitos.jpg" alt="foto de gatos" width="300px">
-
-        <div>
-            <p class="card-titulo">3 feroces carros</p>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, velit?</p>
-        </div>
-    </div>
+    <form action="">
+        <input type="text">
+        <input type="text">
+    </form>
 </body>
 </html>
