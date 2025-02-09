@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-bg {
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../../semana1/gatitos.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#formulario {
+    width: 50vw;
+    align-content: center;
+}
+
+#formulario h3 {
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: 60px auto;
+}
+
+.input-control {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 6px;
+    border: 0;
+    background-color: #F5F7FB;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    background-color: #1a1a1a;
+    color: #eee;
+    border-radius: 10px;
+
+}
