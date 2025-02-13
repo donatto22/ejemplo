@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input:valid {
+            background-color: darkcyan;
+        }
+        input:invalid{
+            background-color: red;
+        }
+    </style>
+    <style>
+        #nombre {
+            color:saddlebrown
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nombre">nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="Edad">Edad</label>
+            <input type="number" name="Edad" id="Edad">
+        </div>
+        <div>
+            <label>Fecha</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>Hora</label>
+            <input type="time">
+        </div>
+        <div>
+            <label>Correo</label>
+            <input type="email">
+        </div>
+        <div>
+            <label>Numero</label>
+            <input type="tel" pattern="[0-9]{9}">
+        </div>
+        <div>
+            <label>Archivo</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input type="password" minlength="2" maxlength="8">
+        </div>
+        <div>
+            <label>Color</label>
+            <input type="color">
+        </div>
+        <div>
+            <label>Rango</label>
+            <input type="range" value="" min="0" max="11">
+            <p>25%</p>
+        </div>
+        <div>
+            <label>Url:</label>
+            <input type="url">
+        </div>
+        <!--debe estar lleno--> 
+        <div>
+            <label>Limpiar:</label>
+            <input type="reset">
+        </div>
+        <div>
+            <label>Buscar:</label>
+            <input type="search">
+        </div>
+    </form>
+</body>
+</html>
