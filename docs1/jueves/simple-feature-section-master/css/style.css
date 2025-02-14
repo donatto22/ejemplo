@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --yellow: #FCEED8;
+    --pink: #FBE5E6;
+    --skyblue: #DEE9FC;
+    --body-background: #121826; 
+    --card: #212936;
+    --gray1: #9DA3AE;
+    --gray2: #D2D5DA;
+    --title-color: #E5E7EB;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--body-background);
+  background-image: url(../resources/Background_image@3x.png);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  gap: 3em;
+}
+
+h1,
+h3{
+    color: var(--title-color);
+
+}
+
+header{
+    text-align: center;
+    margin-top: 1em;
+    width: 400px;
+}
+header h1 {
+    font-size: 40px;
+}
+header p {
+    color: var(--gray1);
+    margin-top: 1em;
+}
+.card-description {
+    color: var(--gray2)
+}
+main{
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+article p{
+    font-size: 20px;
+}
+article{
+    background-color: var(--card);
+    width: 300px;
+    border-radius: 20px;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.emoji {
+    background-color: red;
+    width: fit-content;
+    padding: .5em;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+article:nth-child(1) .emoji {
+    background-color: var(--yellow);
+}
+article:nth-child(2) .emoji {
+    background-color: var(--skyblue);
+}
+article:nth-child(3) .emoji {
+    background-color: var(--pink);
+}
+
+article img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+@media (width < 1090px) {
+body{
+    padding: 3em 0;
+}
+}
+@media (width <=640px){
+header{
+    width: 95%;
+}
+}
