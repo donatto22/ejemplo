@@ -22,6 +22,16 @@ body {
     font-style: normal;
 
     background-color: var(--body-background);
+    background-image: url(../resources/Background_image@3x.png);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
 }
 
 h1,
@@ -29,18 +39,71 @@ h3 {
     color: var(--title-color);
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+    width: 400px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
 header p {
+    margin-top: 1em;
     color: var(--gray1);
 }
 
 main {
     display: flex;
-    gap: 1em;
+    gap: 3em;
+    justify-content: center;
 }
 
 /* Estilos para las tarjetas */
 article {
     background-color: var(--card-background);
+    border-radius: 20px;
+    padding: 1.6em;
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.emoji {
+    background-color: red;
+    width: fit-content;
+    padding: .5em;
+    font-size: 26px;
+    border-radius: 50%;
+}
+
+article:nth-child(1) .emoji {
+    background-color: var(--yellow);
+}
+
+article:nth-child(2) .emoji {
+    background-color: var(--skyblue);
+}
+
+article:nth-child(3) .emoji {
+    background-color: var(--pink);
+}
+
+article img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+article p {
+    width: 85%;
+    font-weight: 300;
 }
 
 .card-description {
