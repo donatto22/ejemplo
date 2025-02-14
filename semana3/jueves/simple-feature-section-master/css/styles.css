@@ -20,4 +20,29 @@ body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-style: normal;
+
+    background-color: var(--body-background);
+}
+
+h1,
+h3 {
+    color: var(--title-color);
+}
+
+header p {
+    color: var(--gray1);
+}
+
+main {
+    display: flex;
+    gap: 1em;
+}
+
+/* Estilos para las tarjetas */
+article {
+    background-color: var(--card-background);
+}
+
+.card-description {
+    color: var(--gray2);
 }
