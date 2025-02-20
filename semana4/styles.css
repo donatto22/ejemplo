@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(212, 254, 254);
+    height: 100px;
+}
+
+header {
+    background-color: blue;
+    height: 300px;
+}
+
+main {
+    background-color: yellow;
+    height: 500px;
+}
+
+main div {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+footer {
+    background-color: chocolate;
+    height: 300px;
+}
+
+/* ------------------- */
+nav {
+    top: 0;
+    text-shadow: 20px 30px 6px red;
+    text-decoration: underline;
+    font-size: 30px;
+    transform: skew(-20deg);
+}
+
+.whatsapp {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 20px 40px -10px black;
+    cursor: pointer;
+    transition: background-color 1s cubic-bezier(1, .43, 1, .29);
+    /* la propiedad a animar - el tiempo - ease* */
+}
+
+.whatsapp:hover {
+    background-color: rgb(63, 42, 4);
+}
+
+main {
+    position: relative;
+}
+
+#bloque-especial {
+    position: absolute;
+    bottom: 0;
+}
+
+.whatsapp:hover {
+    transform: skew(45deg);
+}
+
+#globo>div {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+#globo>div:nth-child(10) {
+    background-color: red;
+}
+
+nav p {
+    animation: subirBajar 2s infinite;
+}
+
+#gatitos {
+    width: 600px;
+    /* animation: rotar 1s infinite; */
+}
+
+#heart {
+    color: red;
+    animation: latido 1s infinite;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        filter: none;
+        transform: scale(1);
+    }
+
+    50% {
+        filter: saturate(200%);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: none;
+        transform: scale(1);
+    }
+}
