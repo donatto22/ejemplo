@@ -1,0 +1,31 @@
+
+.snippets-des{
+    border: solid blue;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+}
+
+.snippets-section{
+    display: flex;
+    border: solid red;
+    gap: 100px;
+    position: relative;
+}
+
+.snippets-img{
+    border: solid blue;
+    width: 50%;
+    position: relative;
+    left: -50px;
+}
+
+.snippets-features{
+    border: solid rebeccapurple ;
+    margin-right: 400px;
+    padding-top: 100px;
+    
+}
+img{
+    border: solid yellow;
+}
