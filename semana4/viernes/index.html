@@ -4,11 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div id="header"></div>
 
+    <!-- Div que contiene la imagen de la pantalla con funciones de teclado -->
+    <div id="snippets"></div>
+
+    <!-- Div que contiene la pantalla de celular y laptop -->
+    <div id="screens"></div>
+
+    <!-- Div que contiene la lista de tarjetas con las características -->
+    <div id="features"></div>
+
+    <!-- Div que contiene todas las marcas auspiciadas -->
+    <div id="branding"></div>
+
+    <!-- Div que contiene los botones para descargar -->
+    <div id="clipboard"></div>
+
+    <div id="footer"></div>
+
+    <script>
+        async function loadComponent(filePath, targetId) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error(`Error al cargar ${filePath}`);
+
+                const htmlContent = await response.text();
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.outerHTML = htmlContent; // Reemplaza el contenedor con el contenido del archivo
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        loadComponent("./components/header.html", "header")
+        loadComponent("./components/snippets.html", "snippets")
+        loadComponent("./components/screens.html", "screens")
+        loadComponent("./components/features.html", "features")
+        loadComponent("./components/branding.html", "branding")
+        loadComponent("./components/clipboard.html", "clipboard")
+        loadComponent("./components/footer.html", "footer")
+    </script>
 </body>
 
 </html>
