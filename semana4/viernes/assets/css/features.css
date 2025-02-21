@@ -4,14 +4,12 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    /* padding: 20px 100px; */
     width: 100%;
 }
 
 #features p {
     color: hsl(201, 11%, 66%);
     font-weight: 400;
-    /* font-size: 14px; */
     line-height: 1.8;
 }
 
@@ -35,7 +33,6 @@
 .workflow-item {
     width: 340px;
     text-align: center;
-    /* padding: 14px; */
 }
 
 .workflow-item:nth-child(1) img {
@@ -65,7 +62,6 @@
 }
 
 .workflow-item img {
-    /* width: 40px; */
     max-width: 60px;
     height: 40px;
 }
