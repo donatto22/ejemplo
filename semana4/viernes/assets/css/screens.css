@@ -1,0 +1,15 @@
+section{
+    background-color: white;
+    margin: 0 20%;
+    text-align: center;
+    font-weight: 400;
+    color: grey;    
+}
+
+#screens img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+
