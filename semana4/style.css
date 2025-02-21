@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: aquamarine;
+    height: 100px;
+}
+
+header{
+    background-color: blueviolet;
+    height: 300px;
+}
+
+main{
+    background-color: yellowgreen;
+    height: 500px;
+}
+
+main div{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+}
+footer{
+    background-color: rgb(50, 91, 205);
+    height: 300px;
+}
+nav{
+    top: 0;
+    text-shadow: 0 0 10px red;
+    font-size: 30px;
+    transform: skew(-20deg);
+    text-decoration: underline;
+}
+
+nav:hover {
+    
+    text-shadow: 0 0 10px green;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+}
+
+nav:hover{
+    color: red;
+}
+
+nav{
+    transition: scale .2s;
+}
+
+
+.whatsapp{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    background-color: brown;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px -10px black;
+    cursor: pointer;
+    transition: background-color .1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    /* animar -tiempo-ease https://cubic-bezier.com/#.17,.67,.83,.67*/
+}
+.whatsapp:hover{
+    background-color: rgb(212, 64, 10); 
+/* }
+.whatsapp:hover{
+    transform: scale(2);
+} */
+}
+.whatsapp:hover{
+    transform: skew(35deg);
+}
+main{
+    position: relative;
+}
+
+#bloque-especial{
+    position: absolute;
+    bottom: 0;
+}
+
+body>div{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+body>div:nth-child(8){
+    background-color: red;
+}
+nav{
+    animation: subirbajar 2s infinite;
+}
+
+#gatitos {
+    width: 600px;
+    /* animation: rotar 1s infinite; */
+}
+
+#heart {
+    color: red;
+    animation: latido 1s infinite;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        filter: none;
+        transform: scale(1);
+    }
+
+    50% {
+        filter: saturate(200%);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: none;
+        transform: scale(1);
+    }
+}
