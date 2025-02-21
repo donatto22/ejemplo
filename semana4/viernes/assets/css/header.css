@@ -1,3 +1,77 @@
+<<<<<<< HEAD
 header {
     background-color: red;
 }
+=======
+body{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    margin: 0 30%;
+    text-align: center;
+}
+
+header p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header:nth-child(1){
+    margin-top: 100px;
+}
+
+header .logo{
+    margin: 0 auto;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header .logo{
+    height: 120px;
+    width: 120px;
+}
+
+header button{
+    color: var(--blanco);
+    padding: 15px 40px;
+    border-radius: 40px;
+    min-width: 250px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+
+header button:hover{
+    opacity: 80%;
+}
+
+header .btndownload{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header button:nth-child(1){
+    background-color: var(--Strong-Cyan);
+}
+
+header button:nth-child(2){
+    background-color: var(--Light-Blue);
+}
+
+>>>>>>> 3cf8a99a12251dee5abcc19fe1f428b6f5eac1db
