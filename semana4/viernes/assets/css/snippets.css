@@ -1,31 +1,48 @@
 
 .snippets-des{
-    border: solid blue;
+
     margin: 0 auto;
     width: 700px;
     text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+        
+    }
+    p{
+        color: hsl(201, 11%, 66%);
+        font-weight: 400;
+    }
 }
 
 .snippets-section{
     display: flex;
-    border: solid red;
     gap: 100px;
     position: relative;
 }
 
 .snippets-img{
-    border: solid blue;
+    
     width: 50%;
     position: relative;
     left: -50px;
 }
 
 .snippets-features{
-    border: solid rebeccapurple ;
-    margin-right: 400px;
-    padding-top: 100px;
     
-}
-img{
-    border: solid yellow;
+    width: 400px;
+    padding-top: 100px;
+    line-height: 1.6;
+    h3{
+        font-size: 22px;
+        color: hsl(210, 10%, 33%);
+        font-weight: ;
+    }
+    p{
+        color: hsl(201, 11%, 66%);
+        font-weight: 400;
+    }
+    
 }
