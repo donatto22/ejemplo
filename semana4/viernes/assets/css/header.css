@@ -46,6 +46,12 @@ header button{
     font-size: 18px;
     border: none;
     cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+
+header button:hover{
+    opacity: 80%;
 }
 
 header .btndownload{
