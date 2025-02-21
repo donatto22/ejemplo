@@ -1,3 +1,10 @@
+body{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 header{
     margin: 0 30%;
     text-align: center;
