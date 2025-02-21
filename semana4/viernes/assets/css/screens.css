@@ -1,0 +1,21 @@
+section{
+    background-color: white;
+    margin: 0 25%;
+    text-align: center;
+    font-weight: 800;
+    color: hsl(210, 10%, 33%); 
+}
+
+p{
+    font-weight: 300; 
+    color: hsl(210, 10%, 33%); 
+    font-size: 16px;
+    
+}
+#screens img {
+    width: 100%;
+    color: hsl(210, 10%, 33%); 
+    /*max-width: 900px;*/  
+    height: auto;
+}
+
