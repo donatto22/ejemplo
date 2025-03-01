@@ -1,0 +1,41 @@
+.titulo1 {
+    color: var(--Grayish-Blue);
+}
+
+.titulo2 {
+    color: var(--Grayish-Blue);
+}
+
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opciones button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+
+.opciones button:first-child {
+    background-color: var(--Strong-Cyan);
+    color: white;
+}
+
+.opciones button:nth-child(2) {
+    background-color: var(--Light-Blue);
+    color: white;
+}
+
+
+.opciones button:hover {
+    box-shadow: 0 0 15px rgba(129, 199, 245, 0.7);
+}

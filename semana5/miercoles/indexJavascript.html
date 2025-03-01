@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let frutaCitrica = "limon"
+        // let cestoDeFrutas = [frutaCitrica, "Pera", "Naranja"]
+        // // ["limon", "Pera", "Naranja"]
+
+
+        // let nombre = "Pepe"
+        // // let edad = 123
+
+        // const PI = 3.1415
+        // const euler = 2.1
+        // const edadMinima = 18
+        // HAY QUE SER DESCRIPTIVOS
+
+        // -------------------------
+        // let edad = prompt("Coloca tu edad") // una alerta con un input
+
+        // console.log muestra un mensajito en la consola
+        // console.log(edad)
+
+
+        // área de un triángulo
+        let base = 10
+        let altura = 4
+
+        let resultado = base * altura / 2
+        console.log("Área de un triángulo", resultado)
+
+        // área de un rectángulo
+        let baseRectangulo = 30
+        let altura2 = 15
+
+        console.log("Área de un rectángulo", baseRectangulo * altura2)
+
+        // área de una circunferencia
+
+
+        // js antiguo
+        function puedeVotar(usuarioEdad) { // parámetros
+            if (typeof usuarioEdad == "number") {
+                if (usuarioEdad >= 18) {
+                    // cuando la condición se cumple
+                    console.log("puede votar")
+                } else {
+                    // cuando la condición no se cumple
+                    console.log("No puedes botar eres muy bebé")
+                }
+            } else {
+                console.log("Por favor coloca un número")
+            }
+        }
+
+        let edadDePepe = "hola"
+        puedeVotar()
+
+        let calificaciones = [
+            {
+                "nombre": "pepe",
+                "notas": [13, 19, 15]
+            },
+
+            {
+                "nombre": "alumno2",
+                "notas": [10, 20, 13]
+            },
+
+            {
+                "nombre": "alumno3",
+                "notas": [18, 5, 20]
+            }
+        ]
+
+        function obtenerPromedios(calificaciones) {
+            calificaciones.forEach(alumno => {
+                let sumaPorAlumno = 0
+
+                alumno.notas.forEach(nota => {
+                    sumaPorAlumno += nota
+                })
+
+                console.log(alumno.nombre, Number((sumaPorAlumno / alumno.notas.length).toFixed(0)))
+            })
+        }
+
+        obtenerPromedios(calificaciones)
+
+    </script>
+</body>
+
+</html>
