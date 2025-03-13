@@ -136,3 +136,43 @@ const traerCafes = async () => {
 }
 
 traerCafes()
+
+const traerproduct= async()=>{
+    const response = await fetch("https://world.openfoodfacts.org/api/v3/product/737628064502.json")
+    // const product = await productResponse.json()
+    const data = await response.json()
+    const imageUrl = data.product.image_url;
+
+    console.log(data.product)
+
+  // Crear un elemento <img> para la imagen
+  const img = document.createElement('img');
+  img.src = imageUrl; // Asignar la URL de la imagen
+  img.alt = "Imagen del Producto";
+  img.width = 200; // Puedes ajustar el tamaño
+
+  // Insertar la imagen en el HTML
+  const container = document.getElementById('product-image'); // Asegúrate de tener un contenedor en tu HTML
+  const containerName = document.createElement('a')
+  containerName.href = `http://127.0.0.1:5500/semana6/viernes/producto.html?id=${data.product.id}`
+  containerName.innerHTML = `<h3>${data.product.product_name}</h3>`
+
+  container.innerHTML = ''; // Limpiar cualquier contenido previo en el contenedor
+  container.appendChild(img); // Agregar la imagen al contenedor
+  container.appendChild(containerName)
+
+  // Obtener y mostrar otros datos del producto (si los necesitas)
+  const info = {
+    name: data.product.product_name, // Cambié 'data.login' por el nombre real del producto
+    localidad: data.product.cities || 'No disponible', // 'cities' podría no estar presente, se pone un valor predeterminado
+  };
+
+  console.log(info);
+
+  // ----------------------------------
+  const producto = data.product // JSON
+  localStorage.setItem('producto', JSON.stringify(producto))
+};
+
+// Llamamos a la función
+traerproduct(); 

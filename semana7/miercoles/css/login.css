@@ -1,0 +1,15 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+form>div {
+    padding: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 4px 0;
+    text-indent: 10px;
+}

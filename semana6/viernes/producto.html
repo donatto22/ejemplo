@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img id="imagen">
+    <h3 id="nommbre"></h3>
+
+    <script>
+        async function traerProducto() {
+            let loading = true
+
+            try {
+                const params = new URLSearchParams(window.location.search)
+                const id = params.get('id')
+                const response = await fetch(`https://world.openfoodfacts.org/api/v3/product/${id}.json`)
+
+                const data = await response.json()
+
+                const producto = data.product
+
+                // ----------------------
+                const img = document.getElementById('imagen')
+                img.src = data.product.image_url
+                img.alt = data.product.product_name
+            } catch {
+                console.log("Hubo un error")
+            }
+        }
+
+        traerProducto()
+    </script>
+</body>
+
+</html>
