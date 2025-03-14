@@ -39,7 +39,7 @@ async function traerFotos() {
         const photoLink = document.createElement('a')
         photoLink.href = `./pages/photo.html?id=${photo.id}`
 
-        const img = document.createElement('img')  
+        const img = document.createElement('img')
         img.src = photo.urls.small
         img.alt = img.alt_description
 

@@ -40,3 +40,13 @@ const llenarDiv = async () => {
 }
 
 llenarDiv()
+
+
+
+
+
+
+// -----------------------------------------------
+setInterval(() => {
+        console.log('hola')
+}, 1000)

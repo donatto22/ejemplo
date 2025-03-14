@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .darkMode {
+            background-color: #1a1a1a;
+
+            p {
+                color: white;
+            }
+        }
+
+        img {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="flag">
+
+    <script src="./js/countries.js" type="module"></script>
+    <script>
+        if (localStorage.getItem('darkmode')) {
+            document.body.classList.add('darkMode')
+        }
+    </script>
+</body>
+
+</html>
